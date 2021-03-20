@@ -1,0 +1,3 @@
+testlist <- list(Beta = 0, CVLinf = 7.31782994069893e-304, FM = 3.82031447735899e-313,      L50 = 0, L95 = 0, LenBins = numeric(0), LenMids = numeric(0),      Linf = 0, MK = 0, Ml = numeric(0), Prob = structure(0, .Dim = c(1L,      1L)), SL50 = 1.0083025048646e-315, SL95 = 2.12248160522076e-314,      nage = 682962941L, nlen = 235539456L, rLens = numeric(0))
+result <- do.call(DLMtool::LBSPRgen,testlist)
+str(result)

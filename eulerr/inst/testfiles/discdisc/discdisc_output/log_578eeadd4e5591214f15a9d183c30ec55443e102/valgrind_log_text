@@ -1,0 +1,12 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/eulerr/inst/testfiles/discdisc/discdisc_output/578eeadd4e5591214f15a9d183c30ec55443e102.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/eulerr/inst/testfiles/discdisc/discdisc_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+d values: -2.43318e-187
+r1 values: -1.64581e+174
+r2 values: -1.66668e-49
+overlap values: 1.91698e-80
+input ends
+TRACE: Passed: _

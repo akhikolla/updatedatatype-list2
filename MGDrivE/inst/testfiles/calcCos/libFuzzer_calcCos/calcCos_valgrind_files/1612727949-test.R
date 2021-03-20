@@ -1,0 +1,3 @@
+testlist <- list(latLongs = structure(c(8.28841365443142e-317, Inf, 7.24676015486365e-308,  1.26226097549189e-168, 5.81132515384557e-241, 4.53088142372279e-241,  NaN, NA, 2.50321021281639e-308, 7.17648551903053e-304), .Dim = c(2L,  5L)), r = 9.36296723661855e-97)
+result <- do.call(MGDrivE::calcCos,testlist)
+str(result)

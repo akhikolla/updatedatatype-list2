@@ -1,0 +1,43 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+d values: -2.43318e-187
+r1 values: -1.64581e+174
+r2 values: -1.66668e-49
+overlap values: 1.91698e-80
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+d values: -1.5615e-299
+r1 values: -1.20777e+13
+r2 values: 2.79236e-196
+overlap values: 1.26379e+187
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+d values: 1.27048e-62
+r1 values: -2.88162e-134
+r2 values: 8.18711e+299
+overlap values: 0.00468189
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+d values: 3.16522e+06
+r1 values: 3.72126e-82
+r2 values: 5.29799e-243
+overlap values: 7.52749e+12
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+d values: -1.92672e-302
+r1 values: -4.2952e-278
+r2 values: 4.24195e+22
+overlap values: -1.34847e-218
+input ends
+INFO: Done fuzzing! Ran 5 tests (2 tests/second) with 0 failed/5 passed/0 abandoned tests

@@ -1,0 +1,3 @@
+testlist <- list(lambda = numeric(0), logq = c(NaN, NaN, 9.77615988447402e-150,  -5.34061248175431e-307, 1.11253692924065e-307, 8.31164531039397e-310,  -3.61633710670214e+279, 6.06247839585415e-309, 1.10225092526383e-72,  1.81844649988114e-306, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,  0, 0, 0, 0, 0, 0, 0, 0, 0), nu = numeric(0), p = numeric(0),      tol = 0)
+result <- do.call(COMPoissonReg:::qzicmp_cpp,testlist)
+str(result)

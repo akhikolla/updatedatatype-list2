@@ -1,0 +1,3 @@
+testlist <- list(m = NULL, repetitions = 0L, in_m = structure(c(2.47743760214353e-178,  2.73731703250257e-312, 5.59504565543767e+141, 5.59504565543767e+141,  5.59504565543767e+141, 5.59514635310687e+141, 6.03342032701407e-291,  9.82841303954641e-235, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,  0, 0, 0, 0, 0, 0), .Dim = c(9L, 3L)))
+result <- do.call(CNull:::communities_individual_based_sampling_beta,testlist)
+str(result)

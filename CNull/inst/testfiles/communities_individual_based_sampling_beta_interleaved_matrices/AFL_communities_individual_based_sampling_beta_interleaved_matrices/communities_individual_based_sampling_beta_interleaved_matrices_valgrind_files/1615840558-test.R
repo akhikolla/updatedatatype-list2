@@ -1,0 +1,3 @@
+testlist <- list(m = NULL, repetitions = 0L, in_m = structure(c(1.92262760447424e-130,  3.05188405450218e-308, 1.57205680724679e-77, 3.96489707851651e+138,  2.04053523097502e-217, 7.82385129130322e-295, 2.39620496345575e+52,  2.99939729948507e-241, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), .Dim = c(5L, 7L)))
+result <- do.call(CNull:::communities_individual_based_sampling_beta_interleaved_matrices,testlist)
+str(result)

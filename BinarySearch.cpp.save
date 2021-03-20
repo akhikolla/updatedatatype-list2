@@ -1,0 +1,52 @@
+#include  "deepstate/DeepState.hpp"
+using namespace deepstate;
+
+int  binsearch(int* a, unsigned int size,int target){
+	int low = 0;
+        int high = size-1;
+	while(low <= high){
+	 int mid = low + (high-low)/2;
+         if(a[mid] == target){
+              return mid;
+          }
+         else if(a[mid] < target){
+            return low = mid + 1;
+           }
+         else {
+          high  = mid - 1;
+         }
+       }
+     return -1;
+}
+
+#define MAX_SIZE 10
+
+TEST(BinarySearch, find){
+   int array[MAX_SIZE];
+   unsigned int actual_size = DeepState_UIntInRange(1,MAX_SIZE);
+   unsigned int pos  = DeepState_UIntInRange(0,actual_size-1);
+   int target= DeepState_Int();
+
+   LOG(TRACE) << "Array Size : " << actual_size;
+   LOG(TRACE) << "Position :" << pos;
+   LOG(TRACE) << "Target : " << target;
+
+   int last = -2147483648;
+   for(int i = 0 ; i < actual_size ; i++){
+       if(i == pos) {
+	array[i] = target;
+       }
+       else if(i < pos) {
+       array[i] = DeepState_IntInRange(last,target-1);
+       }
+       else {
+       array[i] = DeepState_IntInRange(last,5000);
+       }
+     last = array[i];
+     LOG(TRACE) << "a[" << i <<  "] = " << array[i];
+   }
+
+int b_result = binsearch(array,actual_size,target);
+ASSERT (b_result == pos) << "Binary search returned" <<  b_result <<  "; expected " << pos;
+
+}

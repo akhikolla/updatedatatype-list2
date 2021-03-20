@@ -1,0 +1,3 @@
+testlist <- list(sub = NULL, NULL, NULL, NULL, num_sub = 0L, s_ = integer(0),      t_ = integer(0), x_ = c(1.48659161268507e-25, 3.73882217646741e-306,      2.0000000037254, 9.71372584975558e-319, 0, 7.29112201955619e-304,      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,      0, 0, 0, 0, 0))
+result <- do.call(MatchIt:::pairdistsubC,testlist)
+str(result)

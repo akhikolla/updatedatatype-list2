@@ -1,0 +1,73 @@
+citHeader("To cite orthoDr in publications use:")
+
+titl <- meta$Title
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
+vers <- paste("R package version", meta$Version)
+
+citEntry(entry="Article",
+         title = "orthoDr: Semiparametric Dimension Reduction via Orthogonality Constrained Optimization",
+         author = personList(person(family="Zhu", given="Ruoqing"),
+                             person(family="Zhang", given="Jiyang"),
+                             person(family="Zhao", given="Ruilin"),
+                             person(family="Xu", given="Peng"),
+                             person(family="Zhou", given="Wenzhuo"),
+                             person(family="Zhang", given="Xin")),
+	       journal = "The R Journal",
+         year        = "2019",
+         url         = "https://journal.r-project.org/archive/2019/RJ-2019-006/index.html",
+         pdf         = "https://arxiv.org/pdf/1811.11733.pdf",
+
+         textVersion =
+         paste("Zhu, R., Zhang, J., Zhao, R., Xu, P., Zhou, W., & Zhang, X. (2019). ",
+               "orthoDr: semiparametric dimension reduction via orthogonality constrained optimization. ",
+               "The R Journal",
+               sep=""))
+
+citEntry(entry="Article",
+         title  = "Counting Process Based Dimension Reduction Method for Censored Outcomes",
+         author = personList(person(family="Sun", given="Qiang"),
+	                           person(family="Zhu", given="Ruoqing"),
+	                           person(family="Wang", given="Tao"),
+	                           person(family="Zeng", given="Donglin")),
+	       journal      = "Biometrika",
+         year         = "2018+",
+         url          = "https://arxiv.org/abs/1704.05046",
+
+         textVersion =
+         paste("Sun, Q., Zhu, R., Wang, T., & Zeng, D. (2019). ",
+               "Counting Process Based Dimension Reduction Method for Censored Outcomes. ",
+               "Biometrika, 106(1), 181-196.",
+               sep=""),
+         header = "If orthoDr_surv is used, please also cite:")
+
+citEntry(entry="Article",
+         title  = "A Parsimonious Personalized Dose Finding Model via Dimension Reduction",
+         author = personList(person(family="Zhou", given="Wenzhuo"),
+	                           person(family="Zhu", given="Ruoqing")),
+         year         = "2018+",
+         journal      = "arXiv preprint",
+         url          = "https://arxiv.org/abs/1802.06156",
+
+         textVersion =
+         paste("Zhou, W. & Zhu, R. (2018+). ",
+               "A Parsimonious Personalized Dose Finding Model via Dimension Reduction. ",
+               "arXiv preprint arXiv:1802.06156",
+               sep=""),
+         header = "If orthoDr_pt is used, please also cite:")
+
+citEntry(entry="Article",
+         title  = "A Semiparametric Approach to Dimension Reduction",
+         author = personList(person(family="Ma", given="Yanyuan"),
+	                           person(family="Zhu", given="Liping")),
+	       journal      = "Journal of the American Statistical Association",
+         year         = "2012",
+         url          = "http://www.tandfonline.com/doi/abs/10.1080/01621459.2011.646925",
+
+         textVersion =
+         paste("Ma, Y. & Zhu, L. (2012). ",
+               "A Aemiparametric Approach to Dimension Reduction. ",
+               "Journal of the American Statistical Association, 107(497), 168-179",
+               sep=""),
+         header = "If orthoDr_reg is used, please also cite:")
+
+
